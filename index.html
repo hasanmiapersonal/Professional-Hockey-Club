@@ -35,7 +35,7 @@
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost p-0 lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -82,14 +82,17 @@
           </div>
     </header>
     <main>
-      <div>
-        <h3 class="text-5xl font-semibold text-center">Professional Hockeys Club</h3> 
-        <p class="flex justify-center items-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-           turpis placerat <br> dolor.Purus urna in sit nullam proin. </p>
-      </div>
+      <div class="flex flex-col justify-center items-center my-10 border-y-4 border-dashed py-8 space-y-4 ">
+        <div class="flex justify-center items-center">
+            <h2 class=" text-center font-extrabold text-2xl lg:text-4xl">Professional Hockeys Club</h2>
+        </div>
+        <div class="flex justify-center items-center">
+            <p class=" lg:w-[80%] text-center font-semibold leading-8 text-sm px-3 lg:text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.  </p>
+        </div>
+    </div>
       <!--card-->
         <section class="card-title" >
-          <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-4 grid-rows-1">
+          <div class="grid grid-rows-1 lg:grid-cols-4 my-24  gap-[80px] ">
             <div card="1">
             <div class="card w-96 bg-base-100 shadow-xl">
               <figure class="px-10 pt-10">
@@ -145,52 +148,58 @@
                       </div>          
         </section>
         <!--part 2-->
-        <section class="my-20">
-          <h3 class="text-5xl font-semibold text-center">Program Sections</h3>
-          <p class="flex justify-center items-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-            turpis placerat <br> dolor.Purus urna in sit nullam proin. </p>
-        </section>
         <section>
-          <div class="w-570px bg-no-repeat" style="background-image: url(Images/2.png);">
-            <div class="hero-overlay bg-opacity-60"></div>
-              <div class="max-w-md">
-                <h1 class="mb-5 text-5xl font-bold">Junior Program</h1>
-                <p class="mb-5">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-                  enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-                <button class="btn btn-error">Register Now!</button>
+          <div class="flex flex-col justify-center items-center my-10 border-y-4 border-dashed py-8 space-y-4 ">
+              <div class="flex justify-center items-center">
+                  <h2 class=" text-center font-extrabold text-2xl lg:text-4xl">Program Sections</h2>
               </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="w-570px bg-no-repeat" style="background-image: url(Images/3.png);">
-            <div class="hero-overlay bg-opacity-60"></div>
-              <div class="max-w-md">
-                <h1 class="mb-5 text-5xl font-bold">Teenager Program</h1>
-                <p class="mb-5">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-                  enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-                <button class="btn btn-error">Register Now!</button>
+              <div class="flex justify-center items-center">
+                  <p class=" lg:w-[80%] text-center font-semibold leading-8 text-sm px-3 lg:text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.  </p>
               </div>
-            </div>
           </div>
-        </section>
-        <section>
-          <div class="hero w-full" style="background-image: url(Images/4.png);">
-            <div class="hero-overlay bg-opacity-60"></div>
-              <div class="max-w-md">
-                <h1 class="mb-5 text-5xl font-bold">Professional Program</h1>
-                <p class="mb-5">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-                  enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-                <button class="btn btn-error">Register Now!</button>
+              <div class="grid grid-cols-1 lg:grid-cols-2 lg:my-16 gap-4">
+                  <div class=" relative w-auto h-64 lg:h-fit rounded-xl">
+                      <img class="w-full h-full rounded-xl lg:rounded-3xl" src="./Images/2.png" alt="">
+                      <div class="absolute inset-0 w-full bg-[#13131880] rounded-xl lg:rounded-3xl text-start  ">
+                          <div class="text-white absolute bottom-0 left-0 pl-4 pb-6 pr-2 lg:p-10 space-y-4">
+                              <h2 class="font-extrabold text-xl lg:text-2xl">Junior Program</h2>
+                              <p class=" lg:w-1/2 lg:font-medium  text-sm lg:text-base	leading-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla.</p>
+                              <button class="btn   text-white bg-red-600 border-none font-bold text-xl">Register Now!</button>                           
+                           </div>
+                      </div>
+                  </div>
+                  <div class=" relative w-auto h-64 lg:h-fit rounded-xl">
+                      <img class="w-full h-full rounded-xl lg:rounded-3xl" src="./Images/3.png" alt="">
+                      <div class="absolute inset-0 w-full bg-[#13131880] rounded-xl lg:rounded-3xl text-start  ">
+                          <div class="text-white absolute bottom-0 left-0 pl-4 pb-6 pr-2 lg:p-10 space-y-4">
+                              <h2 class="font-extrabold text-xl lg:text-2xl">Teenager Program</h2>
+                              <p class=" lg:w-1/2 lg:font-medium  text-sm lg:text-base	leading-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla.</p>
+                              <butto<button class="btn   text-white bg-red-600 border-none font-bold text-xl">Register Now!</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="lg:col-span-2 relative w-auto h-64 lg:h-fit rounded-xl">
+                      <img class="w-full h-full rounded-xl lg:rounded-3xl" src="./Images/4.png" alt="">
+                      <div class="absolute inset-0 w-full bg-[#13131880] rounded-xl lg:rounded-3xl  ">
+                          <div class="text-white absolute bottom-0 left-0 pl-4 pb-6 pr-2 lg:p-10 space-y-4 text-start">
+                              <h2 class="font-extrabold text-xl lg:text-2xl">Professional Program</h2>
+                              <p class=" lg:w-1/2 lg:font-medium  text-sm lg:text-base	leading-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla.</p>
+                              <button class="btn   text-white bg-red-600 border-none font-bold text-xl">Register Now!</button>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
-          </div>
-        </section>
+      </section>
         <!--part 3-->
         <section class="my-20">
-          <h3 class="text-5xl font-semibold text-center">Our New Products</h3>
-          <p class="flex justify-center items-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-            turpis placerat <br> dolor.Purus urna in sit nullam proin. </p>
+          <div class="flex flex-col justify-center items-center my-10 border-y-4 border-dashed py-8 space-y-4 ">
+            <div class="flex justify-center items-center">
+                <h2 class=" text-center font-extrabold text-2xl lg:text-4xl">Our New Products</h2>
+            </div>
+            <div class="flex justify-center items-center">
+                <p class=" lg:w-[80%] text-center font-semibold leading-8 text-sm px-3 lg:text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.  </p>
+            </div>
+        </div>
         </section>
         <!--card-title-->
         <section class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 grid-rows-3 gap-5">
@@ -292,88 +301,163 @@
         </section>
       </section>
       <!--part 4-->
-      <section class="my-20">
-        <h3 class="text-5xl font-semibold text-center">Clients Question</h3>
-        <p class="flex justify-center items-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-          turpis placerat <br> dolor.Purus urna in sit nullam proin. </p>
-      </section>
-      <section>
-        <div class="card lg:card-side bg-base-100 shadow-xl">
-          <figure><img class="w-180px" src="Images/11.png" alt="Album"/></figure>
-          <div class="grid grid-cols-2 grid-rows-1">
-            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
-              <div class="collapse-title text-xl font-medium">
-                Our Equipment
-              </div>
-              <div class="collapse-content"> 
-                <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
-              </div>
-              <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
-                <div class="collapse-title text-xl font-medium">
-                  Hockey Training
+      <section class="my-24 space-y-5">
+        <div class="flex flex-col justify-center items-center my-12 border-y-4 border-dashed py-8 space-y-4">
+            <div class="flex justify-center items-center">
+                <h class=" text-center font-extrabold text-4xl">Clients Question</h2>
+            </div>
+            <div class="flex justify-center items-center">
+                <p class=" lg:w-[70%] text-center font-semibold leading-8 text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.  </p>
+            </div>
+        </div>
+        </div>
+        <div class=" lg:flex  gap-5">
+            <div>
+                <img src="./Images/11.png" alt="">
+            </div>
+            <div class="my-2">
+                <div class="collapse collapse-plus  ">
+                    <input type="radio" name="my-accordion-3" checked="checked" />
+                    <div class="collapse-title text-xl font-medium  black-font-a">
+                        Our Equipment
+                    </div>
+                    <div class="collapse-content">
+                        <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in
+                            magna.</p>
+                    </div>
                 </div>
-                <div class="collapse-content"> 
-                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                <div class="collapse collapse-plus  ">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-medium ">
+                        Hockey Training
+                    </div>
+                    <div class="collapse-content">
+                        <p>yes </p>
+                    </div>
                 </div>
-                <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
-                  <div class="collapse-title text-xl font-medium">
-                    Private Lessons
-                  </div>
-                  <div class="collapse-content"> 
-                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
-                  </div>
-                  <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+                <div class="collapse collapse-plus  ">
+                    <input type="radio" name="my-accordion-3" />
                     <div class="collapse-title text-xl font-medium">
-                      Ski Touring
+                        Private Lessons
                     </div>
-                    <div class="collapse-content"> 
-                      <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                    <div class="collapse-content">
+                        <p>NO</p>
                     </div>
-                    <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
-                      <div class="collapse-title text-xl font-medium">
+                </div>
+                <div class="collapse collapse-plus  ">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-medium">
+                        Ski Touring
+                    </div>
+                    <div class="collapse-content">
+                        <p>yes</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus  ">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-medium">
                         Booking
-                      </div>
-                      <div class="collapse-content"> 
-                        <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
-                      </div>
-                      <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
-                        <div class="collapse-title text-xl font-medium">
-                          Pricings
-                        </div>  
-              </div>
-      </section>
+                    </div>
+                    <div class="collapse-content">
+                        <p>yes</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus  ">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-medium">
+                        Pricings
+                    </div>
+                    <div class="collapse-content">
+                        <p>yes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
       <!--part bones-->
-      <section class="my-20">
-        <h3 class="text-5xl font-semibold text-center">Get In Touch</h3>
-        <p class="flex justify-center items-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-          turpis placerat <br> dolor.Purus urna in sit nullam proin. </p>
-      </section>
-      <section class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 grid-rows-1">
-        <section>
-        <div class="card lg:card-side bg-base-100 shadow-xl drop-shadow-lg">
-          <figure><img class="w-180px" src="Images/Group 1171275317.png" alt="Album"/></figure>
-            <h2 class="card-title">Phone Number :</h2>
-            <p>(+62) 123-321-543</p>
-          </div>
-      </section>
-      <section>
-        <div class="card lg:card-side bg-base-100 shadow-xl drop-shadow-lg">
-          <figure><img class="w-180px" src="Images/Group 1171275318.png" alt="Album"/></figure>
-            <h2 class="card-title">Email :</h2>
-            <p>hockeys@support.com</p>
-          </div>
-      </section>
-      <section>
-        <div class="card lg:card-side bg-base-100 shadow-xl drop-shadow-lg">
-          <figure><img class="w-180px" src="Images/Group 1171275321.png" alt="Album"/></figure>
-            <h2 class="card-title">Location :</h2>
-            <p></p>
-          </div>
-      </section>
-      <section class="my-20">
-        <h3 class="text-5xl font-semibold text-center">Social Media</h3>
-        <img class="object-none object-center" src="Images/Social.svg">
-      </section>  
+      <section >
+        <div class="flex flex-col justify-center items-center my-12 border-y-4 border-dashed py-8 space-y-4">
+            <div class="flex justify-center items-center">
+                <h class=" text-center font-extrabold text-4xl">Get In Touch</h2>
+            </div>
+            <div class="flex justify-center items-center">
+                <p class=" lg:w-[70%] text-center font-semibold leading-8 text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.  </p>
+            </div>
+        </div>
+
+        <div class="lg:flex my-12 gap-6 space-y-6 lg:space-y-0">
+            <div class=" lg:w-2/5 h-full p-4 lg:p-12 border rounded-2xl space-y-6">
+
+                <div class="p-8 space-y-8 rounded-xl bg-[#BCED6D1A]">
+                    <img src="./Images/Group 1171275317.png" alt="">
+                    <div class="space-y-2">
+                        <p>Phone Number :</p>
+                        <h4 class="font-extrabold">(+62) 123-321-543</h4>
+                    </div>
+
+                </div>
+                <div class="p-8 space-y-8 rounded-xl bg-[#FDDD5F1A]">
+                    <img src="./Images/Group 1171275318.png" alt="">
+                    <div class="space-y-2">
+                        <p>Email :</p>
+                        <h4 class="font-extrabold">hockeys@support.com</h4>
+                    </div>
+
+                </div>
+                <div class="p-8 space-y-8 rounded-xl bg-[#629CF31A]">
+                    <img src="./Images/Group 1171275321.png" alt="">
+                    <div class="space-y-2">
+                        <p>Location :</p>
+                        <h4 class="font-extrabold">152/1 Mohakhali Wireless Gate</h4>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="lg:w-3/5 h-full">
+                <div class="w-full ">
+                    <form class="gap-6 " action="">
+                        <div class="lg:grid grid-cols-2 gap-8 w-full">
+                            <div>
+                                <label for="name" class="block mb-3 font-bold text-xl	">Your Name</label>
+                                <input class="bg-[#13131808] h-16 w-full rounded-lg pl-4" type="text" name="" id="name" placeholder="Enter your full name ">
+                            </div>
+
+                            <div>
+                                <label for="email" class="block mb-3 font-bold text-xl	">Your Email</label>
+                                <input class="bg-[#13131808] h-16 w-full rounded-lg pl-4" type="email" name="" id="email" placeholder="Enter your email ">
+                            </div>
+
+                            <div>
+                                <label for="subject" class="block mb-3 font-bold text-xl	">Subject</label>
+                                <input class="bg-[#13131808] h-16 w-full rounded-lg pl-4" type="text" name="" id="subject" placeholder="Enter your subject ">
+                            </div>
+
+
+
+                            <div>
+                                <label for="number" class="block mb-3 font-bold text-xl	">Phone Number</label>
+                                <input class="bg-[#13131808] h-16 w-full rounded-lg pl-4" type="number" name="" id="number" placeholder="Enter your phone number ">
+                            </div>
+                            
+                        </div>
+
+                        <div class="my-8 h-full">
+                            <label for="message" class="block mb-3 font-bold text-xl	">Message</label>
+                            <textarea class="bg-[#13131808] h-60 lg:h-96 w-full rounded-lg p-6" name="" id="message" cols="full"
+                            placeholder="Write your message"></textarea>
+                        </div>
+                        <button class="btn text-color font-extrabold text-xl w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center items-center h-40 bg-[#13131808] gap-6 ">
+            <h3 class="font-extrabold text-2xl">Social Media</h3>
+            <img src="./Images/Social.svg" alt="">
+
+        </div>
+    </section>
     </main>
     <footer class="footer p-10 bg-neutral text-neutral-content">
       <nav>
